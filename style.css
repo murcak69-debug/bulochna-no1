@@ -1,0 +1,675 @@
+*{box-sizing:border-box} :root{--cream:#fffaf0;--paper:#fffdf8;--brown:#4a2d1d;--brown2:#765039;--orange:#c96e2b;--gold:#e6ad43;--muted:#927d69;--line:#eadfce}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--brown);font-family:"DM Sans",sans-serif}.topline{background:var(--brown);color:#f8dfb2;text-align:center;padding:9px 16px;font-size:10px;letter-spacing:2px;font-weight:700}.header{height:88px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:rgba(255,250,240,.96);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(74,45,29,.08);backdrop-filter:blur(12px)}.brand{display:flex;align-items:center;gap:10px;color:var(--brown);font-family:"Playfair Display",serif;font-size:23px;font-weight:800;text-decoration:none;line-height:1}.brand-mark{font-size:34px;color:var(--orange)}.brand-number{color:var(--orange)}.brand small{display:block;font:700 8px "DM Sans",sans-serif;letter-spacing:1.5px;color:var(--muted);margin-top:6px}.nav{display:flex;gap:34px;margin-left:5%}.nav a,.text-link{color:var(--brown);font-size:13px;font-weight:700;text-decoration:none;transition:.2s}.nav a:hover,.text-link:hover{color:var(--orange)}.header-cta{background:#f4e6d0;padding:13px 18px;border-radius:3px;color:var(--brown);text-decoration:none;font-size:12px;font-weight:700}.header-cta span{color:var(--orange);margin-left:12px}.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--brown)}.page{display:none;animation:fade .4s ease}.page.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{min-height:570px;padding:70px 9% 65px;display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center;background:radial-gradient(circle at 75% 35%,#f5e3c6 0,transparent 35%),var(--cream)}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--orange);font-weight:700}.eyebrow i{display:inline-block;width:7px;height:7px;background:var(--orange);border-radius:50%;margin-right:8px}.hero h1,.page-intro h1,.about-copy h1{font:800 clamp(45px,5vw,72px)/1.08 "Playfair Display",serif;letter-spacing:-2px;margin:22px 0}.hero h1 em,.page-intro h1 em,.about-copy h1 em{color:var(--orange);font-weight:600}.hero-copy>p,.page-intro>p{max-width:440px;color:var(--muted);font-size:15px;line-height:1.9}.hero-actions{display:flex;align-items:center;gap:27px;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:25px;text-decoration:none;font-size:12px;font-weight:700;padding:16px 21px;border-radius:3px;transition:.25s}.btn span{font-size:18px}.btn.primary{background:var(--brown);color:white}.btn.primary:hover{background:var(--orange);transform:translateY(-3px)}.text-link{border-bottom:1px solid #cdbda9;padding-bottom:5px}.hero-note{display:flex;align-items:center;gap:13px;margin-top:48px}.note-icon{font-size:25px;color:var(--orange)}.hero-note b,.hero-note small{display:block}.hero-note b{font:700 13px "Playfair Display",serif}.hero-note small{font-size:10px;color:var(--muted);margin-top:4px}.hero-visual{height:420px;position:relative}.hero-photo{height:100%;width:88%;margin-left:auto;background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMi4khqYQhUy6n17sy_Re_uUJBo_sIQ3eeZfG5kNoFb1fwLwHn3Fl6fomx&s=10") center/cover;border-radius:48% 48% 4px 4px;box-shadow:20px 20px 0 #ead4b4}.photo-stamp{position:absolute;left:-15px;bottom:34px;background:var(--orange);color:#fff5e7;width:130px;height:130px;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;transform:rotate(-10deg);box-shadow:0 8px 25px #75401c33}.photo-stamp span{font:italic 15px "Playfair Display"}.photo-stamp b{font:700 19px "Playfair Display"}.photo-stamp small{font-size:9px;margin-top:7px;letter-spacing:1px}.photo-caption{position:absolute;right:-8px;top:20px;writing-mode:vertical-rl;letter-spacing:3px;font-size:9px;color:var(--brown2)}.section-wrap{padding:65px 9% 85px}.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:27px}.section-heading h2,.season-banner h2,.jobs-contact h2{font:700 36px "Playfair Display",serif;margin:10px 0}.carousel-controls{display:flex;gap:8px}.carousel-controls button{width:40px;height:40px;border:1px solid var(--line);background:transparent;color:var(--brown);font-size:20px;cursor:pointer;transition:.2s}.carousel-controls button:hover{background:var(--brown);color:white}.product-strip{display:grid;grid-auto-flow:column;grid-auto-columns:calc(25% - 15px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:5px 3px 15px}.product-strip::-webkit-scrollbar{display:none}.favorite-card{scroll-snap-align:start;min-width:0}.favorite-card img{width:100%;height:190px;object-fit:cover;border-radius:3px;transition:.35s}.favorite-card:hover img{transform:translateY(-7px) scale(1.025);box-shadow:0 15px 30px #4a2d1d25}.favorite-card span,.menu-card small,.branch small,.job-card small{display:block;color:var(--orange);font-size:9px;font-weight:700;letter-spacing:1.5px;margin-top:14px}.favorite-card h3{font:700 18px "Playfair Display";margin:7px 0}.season-banner{margin:0 7% 80px;background:var(--brown);color:#fff5e7;padding:55px 7%;position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:center}.season-banner .eyebrow{color:#e8b76b}.season-banner h2{font-size:38px;line-height:1.25}.btn.light{background:#f7e6c9;color:var(--brown);margin-top:10px}.season-decoration{font-size:190px;color:#ffffff12;line-height:1}.inner-page{padding:75px 9% 90px;min-height:650px}.page-intro{text-align:center;max-width:650px;margin:0 auto 45px}.page-intro h1{font-size:58px;margin:15px 0}.page-intro>p{margin:0 auto}.filter-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:35px}.filter{border:1px solid var(--line);background:transparent;padding:10px 18px;color:var(--brown);font:600 11px "DM Sans";cursor:pointer;border-radius:30px}.filter.active,.filter:hover{background:var(--brown);color:white;border-color:var(--brown)}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.menu-card{background:var(--paper);border:1px solid #f0e6d8;transition:.3s;overflow:hidden}.menu-card:hover{transform:translateY(-8px);box-shadow:0 18px 35px #4a2d1d18}.menu-card img{width:100%;height:205px;object-fit:cover;transition:.4s}.menu-card:hover img{transform:scale(1.045)}.menu-card>div{padding:0 20px 22px}.menu-card small{margin-top:17px}.menu-card h3{font:700 21px "Playfair Display";margin:8px 0}.menu-card p{font-size:12px;color:var(--muted);line-height:1.7;min-height:40px}.menu-card b{font-size:13px;color:var(--orange)}.menu-card.hidden{display:none}.menu-disclaimer{text-align:center;font-size:11px;color:var(--muted);margin-top:30px}.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.about-image{height:500px;position:relative}.about-image img{width:100%;height:100%;object-fit:cover}.about-image span{position:absolute;bottom:20px;left:20px;background:var(--cream);padding:13px 18px;font-size:9px;letter-spacing:2px;font-weight:700}.about-copy h1{font-size:53px}.about-copy p{font-size:13px;line-height:2;color:var(--muted)}.about-copy .lead{font:italic 20px/1.6 "Playfair Display";color:var(--brown)}.about-copy .btn{margin-top:15px}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:80px;border-top:1px solid var(--line);padding-top:30px}.values>div{padding:10px 20px;border-left:1px solid var(--line)}.values b{color:var(--orange);font:700 13px "Playfair Display"}.values h3{font:700 22px "Playfair Display";margin:9px 0}.values p{font-size:12px;color:var(--muted)}.contact-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:35px}.branch-list{display:grid;gap:15px}.branch{display:flex;gap:20px;background:var(--paper);padding:13px;border:1px solid #f0e6d8}.branch img{width:145px;min-height:125px;object-fit:cover}.branch small{margin-top:5px}.branch h3{font:700 18px "Playfair Display";margin:7px 0}.branch p,.contact-card p{font-size:12px;color:var(--muted)}.branch a,.contact-card a{font-size:11px;color:var(--orange);font-weight:700;text-decoration:none}.contact-side{display:grid;gap:17px;align-content:start}.contact-card{background:#f3e5d0;padding:25px}.contact-card h3{font:700 24px "Playfair Display";margin:12px 0}.contact-card p{margin:11px 0}.map-card{background:var(--paper);border:1px solid var(--line)}.map-title{padding:14px 17px}.map-title b,.map-title small{display:block}.map-title small{font-size:10px;color:var(--muted);margin-top:4px}.map-card iframe{display:block;width:100%;height:230px;border:0}.jobs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.job-card{background:var(--paper);padding:30px 25px;border:1px solid var(--line);transition:.25s}.job-card:hover{transform:translateY(-6px);box-shadow:0 15px 30px #4a2d1d15}.job-icon{font-size:30px;color:var(--orange)}.job-card small{margin-top:20px}.job-card h2{font:700 23px "Playfair Display";min-height:55px}.job-card p{font-size:12px;line-height:1.8;color:var(--muted);min-height:85px}.job-tag{font-size:10px;color:var(--orange);font-weight:700}.jobs-contact{margin-top:45px;padding:35px;background:#f2e4cf;display:grid;grid-template-columns:1fr auto;align-items:center;gap:15px}.jobs-contact h2{font-size:25px;max-width:600px}.jobs-contact p{grid-column:1/-1;font-size:11px;color:var(--muted);margin:0}footer{background:#382216;color:#f7e9d4;padding:35px 9%;display:flex;align-items:center;justify-content:space-between;gap:20px}footer .brand{color:#fff5e7}footer .brand small{color:#c7ad91}footer p{font:italic 14px "Playfair Display";color:#d4b99b}footer>span{font-size:10px;color:#b99d7f}
+@media(max-width:900px){.header{padding:0 5%}.nav{gap:18px;margin:0}.header-cta{display:none}.hero{padding:55px 7%;gap:4%}.hero-visual{height:350px}.product-strip{grid-auto-columns:calc(50% - 10px)}.inner-page{padding-left:6%;padding-right:6%}.menu-grid{grid-template-columns:repeat(2,1fr)}.about-layout{gap:5%}.about-copy h1{font-size:43px}.contact-layout{grid-template-columns:1fr}.jobs-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.topline{font-size:8px}.header{height:72px}.brand{font-size:20px}.brand-mark{font-size:28px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--cream);padding:20px 7%;flex-direction:column;gap:18px;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #4a2d1d12}.nav.open{display:flex}.hero{grid-template-columns:1fr;padding:45px 7% 55px}.hero h1{font-size:53px}.hero-visual{height:310px;margin:15px 5% 0 12%}.photo-stamp{width:105px;height:105px}.photo-stamp b{font-size:16px}.section-wrap{padding:45px 7% 60px}.section-heading h2{font-size:29px}.product-strip{grid-auto-columns:78%}.favorite-card img{height:210px}.season-banner{margin:0 4% 55px;padding:38px 8%}.season-banner h2{font-size:29px}.season-decoration{font-size:100px;position:absolute;right:0}.inner-page{padding:50px 6% 65px}.page-intro h1{font-size:43px}.menu-grid{grid-template-columns:1fr 1fr;gap:12px}.menu-card img{height:145px}.menu-card>div{padding:0 12px 16px}.menu-card h3{font-size:17px}.menu-card p{font-size:11px}.about-layout{grid-template-columns:1fr}.about-image{height:300px}.about-copy h1{font-size:43px}.values{margin-top:45px;gap:8px}.values>div{padding:8px}.values h3{font-size:17px}.values p{font-size:10px}.branch{gap:12px}.branch img{width:105px}.branch h3{font-size:16px}.jobs-grid{grid-template-columns:1fr}.job-card p,.job-card h2{min-height:0}.jobs-contact{grid-template-columns:1fr}.jobs-contact h2{font-size:22px}.jobs-contact p{grid-column:auto}footer{padding:30px 7%;flex-direction:column;align-items:flex-start}footer p{margin:0}footer>span{margin-top:8px}}
+@media(max-width:390px){.menu-grid{grid-template-columns:1fr}.menu-card img{height:190px}.hero-actions{gap:15px;flex-wrap:wrap}.branch{flex-direction:column}.branch img{width:100%;height:145px}}
+
+
+/* =================================
+   PREMIUM ANIMATIONS
+================================= */
+
+/* Плавное появление страниц */
+.page.active {
+    animation: pageEnter 0.65s ease both;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Появление элементов при прокрутке */
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(.2,.7,.2,1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Появление главного заголовка */
+.hero-copy {
+    animation: heroText 1s ease both;
+}
+
+.hero-visual {
+    animation: heroImage 1.1s ease both;
+}
+
+@keyframes heroText {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes heroImage {
+    from {
+        opacity: 0;
+        transform: translateX(35px) scale(.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Карточки товаров */
+.menu-card,
+.favorite-card,
+.job-card,
+.branch {
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.menu-card:hover,
+.favorite-card:hover,
+.job-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 18px 35px rgba(83, 48, 29, .14);
+}
+
+.menu-card img,
+.favorite-card img,
+.branch img {
+    transition: transform .65s cubic-bezier(.2,.7,.2,1);
+}
+
+.menu-card:hover img,
+.favorite-card:hover img,
+.branch:hover img {
+    transform: scale(1.07);
+}
+
+/* Кнопки */
+.btn,
+.header-cta {
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.btn:hover,
+.header-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 20px rgba(83, 48, 29, .16);
+}
+
+/* Навигация */
+.nav a {
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #bd773b;
+    transition: width .3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Плавное появление фотографий */
+.hero-photo {
+    transition: transform .8s ease;
+}
+
+.hero-visual:hover .hero-photo {
+    transform: scale(1.025);
+}
+
+/* Уважение к настройкам пользователя */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+/* =====================================
+   MOBILE VERSION — BULОЧНА №1
+===================================== */
+
+.menu-toggle {
+    display: none;
+}
+
+/* Планшеты */
+@media (max-width: 900px) {
+
+    .header {
+        padding: 16px 5%;
+        gap: 15px;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    .hero {
+        padding: 45px 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 7vw, 65px);
+    }
+
+    .hero-visual {
+        min-width: 0;
+    }
+
+    .section-wrap,
+    .inner-page {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-layout {
+        gap: 30px;
+    }
+
+    .contact-layout {
+        gap: 25px;
+    }
+}
+
+/* Смартфоны */
+@media (max-width: 600px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .topline {
+        font-size: 9px;
+        padding: 9px 5px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    /* Шапка */
+
+    .header {
+        position: relative;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 5%;
+        background: #fffaf2;
+    }
+
+    .brand {
+        font-size: 19px;
+    }
+
+    .brand-mark {
+        font-size: 27px;
+    }
+
+    .brand small {
+        font-size: 7px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43px;
+        height: 43px;
+        border: 1px solid #e6d4bd;
+        border-radius: 12px;
+        background: #f8eddf;
+        color: #633b27;
+        font-size: 23px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    .menu-toggle:active {
+        transform: scale(.92);
+    }
+
+    /* Мобильная навигация */
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 4%;
+        right: 4%;
+        padding: 12px;
+        flex-direction: column;
+        gap: 4px;
+        background: #fffaf2;
+        border: 1px solid #eadbc8;
+        border-radius: 17px;
+        box-shadow: 0 15px 35px rgba(65, 38, 23, .15);
+        z-index: 1001;
+    }
+
+    .nav.open {
+        display: flex;
+        animation: mobileMenuEnter .25s ease both;
+    }
+
+    .nav a {
+        display: block;
+        padding: 14px 15px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .nav a:active {
+        background: #f3e4d0;
+    }
+
+    .nav a::after {
+        display: none;
+    }
+
+    @keyframes mobileMenuEnter {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Главная страница */
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 38px 6% 25px;
+        gap: 28px;
+    }
+
+    .hero-copy {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(39px, 11vw, 53px);
+        line-height: 1.12;
+        margin: 17px 0;
+    }
+
+    .hero-copy > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 22px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-height: 290px;
+    }
+
+    .hero-photo {
+        min-height: 290px;
+        border-radius: 20px;
+    }
+
+    .photo-stamp {
+        transform: scale(.8);
+        transform-origin: bottom right;
+    }
+
+    /* Секция с товарами */
+
+    .section-wrap {
+        padding: 40px 5%;
+    }
+
+    .section-heading {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .product-strip {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 14px;
+        padding: 10px 2px 20px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .product-strip::-webkit-scrollbar {
+        display: none;
+    }
+
+    .favorite-card {
+        flex: 0 0 78%;
+        scroll-snap-align: start;
+    }
+
+    .favorite-card img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .carousel-controls button {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Осенний баннер */
+
+    .season-banner {
+        margin: 10px 5% 35px;
+        padding: 35px 23px;
+        border-radius: 18px;
+    }
+
+    .season-banner h2 {
+        font-size: 29px;
+    }
+
+    /* Внутренние страницы */
+
+    .inner-page {
+        padding: 38px 5%;
+    }
+
+    .page-intro {
+        margin-bottom: 28px;
+    }
+
+    .page-intro h1,
+    .about-copy h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .page-intro p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Фильтры меню */
+
+    .filter-row {
+        display: flex;
+        overflow-x: auto;
+        gap: 9px;
+        padding: 5px 0 15px;
+        scrollbar-width: none;
+    }
+
+    .filter-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    /* Карточки меню */
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .menu-card {
+        min-width: 0;
+        overflow: hidden;
+        border-radius: 13px;
+    }
+
+    .menu-card img {
+        width: 100%;
+        height: 135px;
+        object-fit: cover;
+    }
+
+    .menu-card > div {
+        padding: 11px;
+    }
+
+    .menu-card small {
+        font-size: 8px;
+    }
+
+    .menu-card h3 {
+        font-size: 14px;
+        line-height: 1.3;
+        margin: 7px 0;
+    }
+
+    .menu-card p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .menu-card b {
+        font-size: 13px;
+    }
+
+    /* Про нас */
+
+    .about-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 17px;
+    }
+
+    .about-copy {
+        width: 100%;
+    }
+
+    .about-copy p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .values {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 13px;
+        margin-top: 35px;
+    }
+
+    .values > div {
+        padding: 20px;
+    }
+
+    /* Контакты */
+
+    .contact-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .branch-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .branch {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .branch img {
+        width: 105px;
+        height: 105px;
+        flex-shrink: 0;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .branch h3 {
+        font-size: 14px;
+    }
+
+    .branch p,
+    .branch a {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .contact-side {
+        width: 100%;
+    }
+
+    .contact-card {
+        padding: 22px;
+    }
+
+    .map-card iframe {
+        width: 100%;
+        height: 260px;
+    }
+
+    /* Вакансии */
+
+    .jobs-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .job-card {
+        padding: 23px;
+    }
+
+    .job-card h2 {
+        font-size: 21px;
+    }
+
+    .jobs-contact {
+        padding: 25px 20px;
+        margin-top: 25px;
+    }
+
+    .jobs-contact h2 {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .jobs-contact .btn {
+        margin-top: 15px;
+    }
+
+    /* Кнопки */
+
+    .btn {
+        padding: 13px 17px;
+        font-size: 12px;
+    }
+
+    /* Подвал */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 30px 6%;
+        text-align: left;
+    }
+
+    footer p,
+    footer > span {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}
+
+/* Маленькие экраны */
+
+@media (max-width: 360px) {
+
+    .menu-grid {
+        gap: 9px;
+    }
+
+    .menu-card img {
+        height: 115px;
+    }
+
+    .menu-card h3 {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .favorite-card {
+        flex-basis: 85%;
+    }
+}
