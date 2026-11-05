@@ -14,10 +14,6 @@ function showPage() {
 window.addEventListener('hashchange', showPage);
 window.addEventListener('DOMContentLoaded', showPage);
 
-toggle.addEventListener('click', () => {
-  const opened = nav.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', String(opened));
-});
 
 const strip = document.getElementById('productStrip');
 document.getElementById('prevSlide').addEventListener('click', () => strip.scrollBy({ left: -strip.clientWidth * .75, behavior: 'smooth' }));
